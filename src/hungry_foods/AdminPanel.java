@@ -4,12 +4,9 @@
  */
 package hungry_foods;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
-import javax.swing.Timer;
 
 
 public class AdminPanel extends javax.swing.JFrame {
@@ -19,16 +16,7 @@ public class AdminPanel extends javax.swing.JFrame {
         initComponents(); 
         setScalingImages();
     }
-    public void init(){
-        
-    }
     
-    public void setImage(){
-
-    }
-    
-    public void reset(){
-    }
     private void loadAndScaleImage(JLabel label, String imagePath) {
         try {
             int labelWidth = label.getWidth();
@@ -64,18 +52,7 @@ public class AdminPanel extends javax.swing.JFrame {
     }
     
     public void setScalingImages() {
-        SwingUtilities.invokeLater(() -> {
-            loadAndScaleImage(jLabel4, "/image/Halo-Halo.png");            //Lumpia
-            loadAndScaleImage(jLabel5, "/image/Coca-Cola.jpg");             //Turon
-            loadAndScaleImage(jLabel13, "/image/Banana Cue.png");        //Banana Cue
-            loadAndScaleImage(jLabel12, "/image/Kamote Cue.png");        //Kamote Cue
-            loadAndScaleImage(jLabel4, "/image/Puto.png");              //Puto
-            loadAndScaleImage(jLabel6, "/image/Cheese Sticks.png");     //Cheese Sticks
-            loadAndScaleImage(jLabel8, "/image/French Fries.png");      //French Fries
-            loadAndScaleImage(jLabel9, "/image/Siopao.png");            //Siopao
-            loadAndScaleImage(jLabel10, "/image/Kutsinta.png");          //Kutsinta
-            loadAndScaleImage(jLabel17, "/image/Velora.png");        //Ice Candy
-        });
+        
     }
     
     @SuppressWarnings("unchecked")
@@ -1156,7 +1133,7 @@ public class AdminPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        this.setExtendedState(HungryFoods.ICONIFIED);
+      
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -1164,50 +1141,12 @@ public class AdminPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-      myButton.addActionListener(new java.awt.event.ActionListener() {
-    public void actionPerformed(java.awt.event.ActionEvent evt) {
-        // Your action logic here
-        System.out.println("Button clicked!");
-    }
-});
-
+ 
     }//GEN-LAST:event_jButton14ActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AdminPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AdminPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AdminPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AdminPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new AdminPanel().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
